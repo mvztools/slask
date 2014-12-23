@@ -55,6 +55,7 @@ class Server(object):
         self.users = dict((u["id"], u) for u in login_data["users"])
         self.parse_channel_data(login_data["channels"])
         self.parse_channel_data(login_data["ims"])
+        self.parse_channel_data(login_data["groups"])
         try:
             self.websocket = create_connection(self.login_data['url'])
             self.websocket.sock.setblocking(0)
