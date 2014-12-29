@@ -4,3 +4,5 @@ requests==2.2.1
 six==1.8.0
 websocket-client==0.22.0
 importlib>=1.0.3
+python-daemon==1.6.1
+jira==0.32
